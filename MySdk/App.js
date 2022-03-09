@@ -24,15 +24,21 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import NativeAdContainer from './ad/NativeAdContainer';
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
+      <NativeAdContainer />
       <FastImage
-      resizeMode="cover"
-        style={{ width: "100%", height: 250 }}
-        source={{ uri: "https://www.appstud.com/wp-content/uploads/2018/03/React-Native-Titre.png" }} />
+        resizeMode="cover"
+        style={{width: '100%', height: 250}}
+        source={{
+          uri:
+            'https://www.appstud.com/wp-content/uploads/2018/03/React-Native-Titre.png',
+        }}
+      />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"

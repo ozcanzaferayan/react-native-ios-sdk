@@ -1,6 +1,7 @@
 PODS:
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.5)
+  - FBAudienceNetwork (6.9.0)
   - FBLazyVector (0.61.5)
   - FBReactNativeSpec (0.61.5):
     - Folly (= 2018.10.22.00)
@@ -9,6 +10,20 @@ PODS:
     - React-Core (= 0.61.5)
     - React-jsi (= 0.61.5)
     - ReactCommon/turbomodule/core (= 0.61.5)
+  - FBSDKCoreKit (5.8.0):
+    - FBSDKCoreKit/Basics (= 5.8.0)
+    - FBSDKCoreKit/Core (= 5.8.0)
+  - FBSDKCoreKit/Basics (5.8.0)
+  - FBSDKCoreKit/Core (5.8.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.8.0):
+    - FBSDKLoginKit/Login (= 5.8.0)
+  - FBSDKLoginKit/Login (5.8.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.8.0):
+    - FBSDKShareKit/Share (= 5.8.0)
+  - FBSDKShareKit/Share (5.8.0):
+    - FBSDKCoreKit (~> 5.0)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -19,15 +34,15 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - libwebp (1.1.0):
-    - libwebp/demux (= 1.1.0)
-    - libwebp/mux (= 1.1.0)
-    - libwebp/webp (= 1.1.0)
-  - libwebp/demux (1.1.0):
+  - libwebp (1.2.1):
+    - libwebp/demux (= 1.2.1)
+    - libwebp/mux (= 1.2.1)
+    - libwebp/webp (= 1.2.1)
+  - libwebp/demux (1.2.1):
     - libwebp/webp
-  - libwebp/mux (1.1.0):
+  - libwebp/mux (1.2.1):
     - libwebp/demux
-  - libwebp/webp (1.1.0)
+  - libwebp/webp (1.2.1)
   - RCTRequired (0.61.5)
   - RCTTypeSafety (0.61.5):
     - FBLazyVector (= 0.61.5)
@@ -252,24 +267,28 @@ PODS:
     - React-Core
     - SDWebImage (~> 5.8)
     - SDWebImageWebPCoder (~> 0.6.1)
-  - SDWebImage (5.9.4):
-    - SDWebImage/Core (= 5.9.4)
-  - SDWebImage/Core (5.9.4)
+  - SDWebImage (5.12.4):
+    - SDWebImage/Core (= 5.12.4)
+  - SDWebImage/Core (5.12.4)
   - SDWebImageWebPCoder (0.6.1):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.7)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - FBAudienceNetwork (= 6.9.0)
   - FBLazyVector
   - FBReactNativeSpec
+  - FBSDKCoreKit (= 5.8.0)
+  - FBSDKLoginKit (= 5.8.0)
+  - FBSDKShareKit (= 5.8.0)
   - RCTRequired
   - RCTTypeSafety
   - React
   - React-Core
   - React-CoreModules
   - ReactCommon
-  - "RNFastImage (from `git@github.com:DylanVann/react-native-fast-image.git`, tag `v8.3.3`)"
+  - RNFastImage (from `https://github.com/DylanVann/react-native-fast-image.git`, tag `v8.3.3`)
 
 SPEC REPOS:
   https://github.com/AbdullahAsendar/react-native-private-repo:
@@ -300,28 +319,36 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - boost-for-react-native
     - DoubleConversion
+    - FBAudienceNetwork
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
     - libwebp
     - SDWebImage
     - SDWebImageWebPCoder
 
 EXTERNAL SOURCES:
   RNFastImage:
-    :git: "git@github.com:DylanVann/react-native-fast-image.git"
+    :git: https://github.com/DylanVann/react-native-fast-image.git
     :tag: v8.3.3
 
 CHECKOUT OPTIONS:
   RNFastImage:
-    :git: "git@github.com:DylanVann/react-native-fast-image.git"
+    :git: https://github.com/DylanVann/react-native-fast-image.git
     :tag: v8.3.3
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
+  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
   FBLazyVector: 0e8807f53d869dd75f1376faca746ecf41d53e27
   FBReactNativeSpec: bb847cfa80e0f57df8f6b552cbe92f43264a46d4
+  FBSDKCoreKit: e7dcac0aabcfb09d0166998edd95fe3b05a0ce5d
+  FBSDKLoginKit: 1b0cf04df0370b37404213157b060d6666ede814
+  FBSDKShareKit: abc29e1bb4f9f59f679adf1ae191006d68455f96
   Folly: 67e5794bb00e6ea586292080eebb5e1f3529bc5b
   glog: 4ba5f5b95b18fbb84fa3222fe8f62d9825a3d15e
-  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
+  libwebp: 98a37e597e40bfdb4c911fc98f2c53d0b12d05fc
   RCTRequired: b3f43303b9302c189ae99b43bffba09434acc723
   RCTTypeSafety: 2ed04cb4a2d79228526faace65afc147f45fc920
   React: 66abf4f9061b905754f7f9fb2877c549e6126ecb
@@ -342,10 +369,10 @@ SPEC CHECKSUMS:
   React-RCTVibration: 8ff8eed33c866e89c0a979514be0871762e95a4f
   ReactCommon: 02c3295405c8f4156cb66851baa51438fa4db6a8
   RNFastImage: ff7e055d085abe465b358ce5aa51e3c6d64b1efd
-  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  SDWebImage: 631cf572cc93dfdfe54162e556410a61f1141928
   SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
   Yoga: 267c4fc612b16d4f5efe03e18ee84639f827cda2
 
-PODFILE CHECKSUM: 43f8fba344415c29c5cd902876dd377fae7f7bed
+PODFILE CHECKSUM: abff4aaf17e47cc64ea41b5042999fc71591512a
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.2

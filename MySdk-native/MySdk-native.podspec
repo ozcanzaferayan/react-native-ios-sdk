@@ -26,4 +26,10 @@ Pod::Spec.new do |s|
   s.dependency 'RCTTypeSafety'
 
   s.dependency 'RNFastImage'
+
+
+  s.dependency 'FBSDKCoreKit', '5.8.0'
+  s.dependency 'FBSDKLoginKit', '5.8.0'
+  s.dependency 'FBSDKShareKit', '5.8.0'
+  s.vendored_frameworks = 'Frameworks/FBAudienceNetwork/FBAudienceNetwork.xcframework'
 end
